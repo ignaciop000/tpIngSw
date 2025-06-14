@@ -67,8 +67,8 @@ class_counts = count_images_per_class(train_dataset)
 # Print the count of images per class
 for class_name, count in class_counts.items():
     print(f"Class '{class_name}': {count} images")
-	
-	train_class_counts = count_images_per_class(train_dataset)
+
+train_class_counts = count_images_per_class(train_dataset)
 
 # Generate a list of colors based on the number of classes
 colors = plt.cm.viridis(np.linspace(0, 1, len(train_class_counts)))
